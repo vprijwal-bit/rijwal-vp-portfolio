@@ -161,5 +161,4 @@ npm run dev
 - **GitHub**: [github.com/vprijwal-bit](https://github.com/vprijwal-bit)
 - **LinkedIn**: [linkedin.com/in/rijwalvp](https://www.linkedin.com/in/rijwalvp)
 - **Email**: [vprijwal@gmail.com](mailto:vprijwal@gmail.com)
-- **Phone**: +91 9961207455
 - **Resume**: Available in `assets/documents/RijwalVP-CV.pdf` and downloadable via the hero section & terminal (`cv` command).

@@ -113,7 +113,6 @@
 
     contact: `COMMUNICATION CHANNELS:
   • Email    : <a href="mailto:vprijwal@gmail.com" class="term-link">vprijwal@gmail.com</a>
-  • Phone    : <a href="tel:+919961207455" class="term-link">+91 9961207455</a>
   • GitHub   : <a href="https://github.com/vprijwal-bit" target="_blank" class="term-link">https://github.com/vprijwal-bit</a>
   • LinkedIn : <a href="https://www.linkedin.com/in/rijwalvp" target="_blank" class="term-link">https://www.linkedin.com/in/rijwalvp</a>
   • Location : Malappuram, Kerala, India`,

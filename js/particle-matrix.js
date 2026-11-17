@@ -46,7 +46,7 @@
       this.radius = Math.random() * 2 + 1;
       this.isToken = Math.random() > 0.85;
       this.tokenText = tokens[Math.floor(Math.random() * tokens.length)];
-      this.color = Math.random() > 0.4 ? 'rgba(0, 240, 255, ' : 'rgba(168, 85, 247, ';
+      this.color = Math.random() > 0.4 ? 'rgba(18, 59, 255, ' : 'rgba(198, 255, 0, ';
       this.baseAlpha = Math.random() * 0.5 + 0.2;
     }
 
@@ -122,7 +122,7 @@
     ctx.clearRect(0, 0, width, height);
 
     // Draw Subtle Cyber Horizon Lines
-    ctx.strokeStyle = 'rgba(0, 240, 255, 0.02)';
+    ctx.strokeStyle = 'rgba(18, 59, 255, 0.02)';
     ctx.lineWidth = 1;
     const gridStep = 80;
     for (let x = 0; x < width; x += gridStep) {
@@ -150,7 +150,7 @@
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = `rgba(0, 240, 255, ${alpha})`;
+          ctx.strokeStyle = `rgba(18, 59, 255, ${alpha})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }

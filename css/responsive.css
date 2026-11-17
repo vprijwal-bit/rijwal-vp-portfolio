@@ -4,42 +4,37 @@
  * Developed for Rijwal VP Portfolio
  */
 
+.mobile-nav-drawer {
+  display: none;
+}
+
 /* ==================== TABLETS & MEDIUM SCREENS (max-width: 1024px) ==================== */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    text-align: left;
+    gap: 1.5rem;
   }
 
   .hero-headline-quote {
-    border-left: none;
-    border-top: 2px solid var(--neon-cyan);
-    padding-left: 0;
-    padding-top: 0.8rem;
-    margin: 1rem auto 1.4rem auto;
-  }
-
-  .hero-intro {
-    margin: 0 auto 2rem auto;
+    border-left: 2px solid var(--neon-lime);
+    border-top: 0;
+    padding-left: 1rem;
+    padding-top: 0;
+    margin: 1rem 0 1.4rem;
   }
 
   .hero-cta-group {
-    justify-content: center;
-  }
-
-  .hero-telemetry-strip {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .hero-3d-visual {
-    min-height: 380px;
-    height: 380px;
-    order: -1;
+    min-height: 440px;
+    height: 440px;
   }
 
-  .cyber-canvas-frame {
-    height: 380px;
+  .hero-visual-stage {
+    height: 440px;
   }
 
   .about-grid {
@@ -58,12 +53,52 @@
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nav-links {
+    gap: 0.35rem;
+  }
+
+  .nav-link {
+    font-size: 0.67rem;
+  }
+
+  .nav-actions {
+    gap: 0.35rem;
+  }
+
+  .nav-action-btn {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.65rem;
   }
 }
 
 /* ==================== MOBILE DEVICES (max-width: 768px) ==================== */
 @media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-headline-quote {
+    border-left: none;
+    border-top: 2px solid var(--neon-lime);
+    padding-left: 0;
+    padding-top: 0.8rem;
+    margin: 1rem auto 1.4rem;
+  }
+
+  .hero-greeting,
+  .hero-headline-quote {
+    text-align: center;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
   /* Navigation */
   .nav-links {
     display: none;
@@ -73,27 +108,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
-    background: rgba(0, 240, 255, 0.08);
-    border: 1px solid rgba(0, 240, 255, 0.35);
+    width: 38px;
+    height: 38px;
+    background: rgba(18, 59, 255, 0.08);
+    border: 1px solid rgba(18, 59, 255, 0.35);
     border-radius: 8px;
     color: var(--neon-cyan);
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    box-shadow: 0 0 15px rgba(18, 59, 255, 0.2);
     transition: var(--transition-smooth);
   }
 
   .mobile-toggle-btn:hover {
-    background: rgba(0, 240, 255, 0.2);
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    background: rgba(18, 59, 255, 0.2);
+    box-shadow: 0 0 20px rgba(18, 59, 255, 0.4);
   }
 
   /* High-Contrast Futuristic Mobile Slide-in Drawer */
   .mobile-nav-drawer {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 85%;
     max-width: 340px;
     height: 100vh;
@@ -101,17 +136,22 @@
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border-left: 2px solid var(--neon-cyan);
-    box-shadow: -15px 0 50px rgba(0, 240, 255, 0.25);
+    box-shadow: -15px 0 50px rgba(18, 59, 255, 0.25);
     z-index: 300;
     padding: 1.8rem 1.4rem;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .mobile-nav-drawer.open {
-    right: 0;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .mobile-nav-header {
@@ -119,7 +159,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1.2rem;
-    border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+    border-bottom: 1px solid rgba(18, 59, 255, 0.2);
     margin-bottom: 1.5rem;
   }
 
@@ -139,7 +179,7 @@
     width: 36px;
     height: 36px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 240, 255, 0.3);
+    border: 1px solid rgba(18, 59, 255, 0.3);
     border-radius: 6px;
     color: var(--neon-cyan);
     display: flex;
@@ -187,9 +227,9 @@
   .mobile-nav-link:hover,
   .mobile-nav-link.active {
     color: #ffffff;
-    background: rgba(0, 240, 255, 0.12);
+    background: rgba(18, 59, 255, 0.12);
     border-color: var(--neon-cyan);
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
+    box-shadow: 0 0 15px rgba(18, 59, 255, 0.25);
     transform: translateX(4px);
   }
 
@@ -200,20 +240,17 @@
 
   /* Hero Section */
   .hero-name {
-    font-size: 2.3rem;
-  }
-
-  .hero-role {
-    font-size: 0.95rem;
+    font-size: clamp(1.6rem, 8vw, 2.3rem);
   }
 
   .hero-3d-visual {
-    min-height: 300px;
-    height: 300px;
+    min-height: 340px;
+    height: 340px;
+    order: -1;
   }
 
-  .cyber-canvas-frame {
-    height: 300px;
+  .hero-visual-stage {
+    height: 340px;
   }
 
   .hero-cta-group {
@@ -223,13 +260,6 @@
 
   .hero-cta-group .btn-cyber {
     width: 100%;
-  }
-
-  .hero-telemetry-strip {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-    text-align: center;
   }
 
   /* About Pillars */
@@ -289,8 +319,54 @@
     height: 42px;
   }
 
-  .skills-grid, .lab-grid, .cert-grid {
+  .skills-grid, .cert-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .nav-actions {
+    gap: 0.35rem;
+  }
+
+  .nav-action-btn {
+    padding: 0.4rem;
+    min-width: 36px;
+    justify-content: center;
+  }
+
+  .nav-action-btn span {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-email-item {
+    flex-wrap: wrap;
+  }
+
+  .contact-email-info {
+    flex: 1 1 100%;
+    gap: 0.6rem;
+  }
+
+  .contact-info-card .channel-info-group {
+    min-width: 0;
+  }
+
+  .contact-info-card .channel-value {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-email-item #copy-email-btn {
+    margin-left: auto;
   }
 }
 
@@ -308,7 +384,4 @@
     transform: none !important;
   }
 
-  .status-dot, .mouse-wheel-dot {
-    animation: none !important;
-  }
 }

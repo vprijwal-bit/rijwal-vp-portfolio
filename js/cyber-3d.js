@@ -52,7 +52,7 @@
     // --- Object A: Inner Core Sphere (Glowing Emissive Energy) ---
     const coreGeo = new THREE.SphereGeometry(3.2, 32, 32);
     const coreMat = new THREE.MeshBasicMaterial({
-      color: 0x00f0ff,
+      color: 0x123bff,
       wireframe: true,
       transparent: true,
       opacity: 0.35,
@@ -63,9 +63,9 @@
     // Solid inner core
     const innerSolidGeo = new THREE.IcosahedronGeometry(2.2, 2);
     const innerSolidMat = new THREE.MeshPhongMaterial({
-      color: 0x071b2d,
-      emissive: 0x005577,
-      specular: 0x00f0ff,
+      color: 0x080b18,
+      emissive: 0x1827c8,
+      specular: 0x123bff,
       shininess: 90,
       flatShading: true,
       transparent: true,
@@ -77,7 +77,7 @@
     // --- Object B: Outer Cryptographic Wireframe Icosahedron ---
     const icoGeo = new THREE.IcosahedronGeometry(5.2, 1);
     const icoMat = new THREE.MeshBasicMaterial({
-      color: 0x38bdf8,
+      color: 0x123bff,
       wireframe: true,
       transparent: true,
       opacity: 0.45
@@ -88,7 +88,7 @@
     // Vertices Nodes on Icosahedron
     const icoVertices = icoGeo.attributes.position;
     const nodeGeo = new THREE.SphereGeometry(0.16, 8, 8);
-    const nodeMat = new THREE.MeshBasicMaterial({ color: 0x00f0ff });
+    const nodeMat = new THREE.MeshBasicMaterial({ color: 0x123bff });
     for (let i = 0; i < icoVertices.count; i++) {
       const node = new THREE.Mesh(nodeGeo, nodeMat);
       node.position.set(icoVertices.getX(i), icoVertices.getY(i), icoVertices.getZ(i));
@@ -98,7 +98,7 @@
     // --- Object C: Orbiting Security Ring Alpha ---
     const ringAlphaGeo = new THREE.TorusGeometry(7.2, 0.05, 16, 100);
     const ringAlphaMat = new THREE.MeshBasicMaterial({
-      color: 0x00f0ff,
+      color: 0x123bff,
       transparent: true,
       opacity: 0.7
     });
@@ -109,14 +109,14 @@
 
     // Satellite Data Node on Ring Alpha
     const satGeo = new THREE.BoxGeometry(0.5, 0.5, 0.5);
-    const satMat = new THREE.MeshPhongMaterial({ color: 0xa855f7, emissive: 0x7e22ce });
+    const satMat = new THREE.MeshPhongMaterial({ color: 0xc6ff00, emissive: 0x1827c8 });
     const satMesh = new THREE.Mesh(satGeo, satMat);
     cyberGroup.add(satMesh);
 
     // --- Object D: Orbiting Security Ring Beta ---
     const ringBetaGeo = new THREE.TorusGeometry(8.4, 0.04, 16, 100);
     const ringBetaMat = new THREE.MeshBasicMaterial({
-      color: 0xa855f7,
+      color: 0xc6ff00,
       transparent: true,
       opacity: 0.5
     });
@@ -127,7 +127,7 @@
 
     // Satellite 2 on Ring Beta
     const sat2Geo = new THREE.OctahedronGeometry(0.4);
-    const sat2Mat = new THREE.MeshPhongMaterial({ color: 0x00f0ff, emissive: 0x0284c7 });
+    const sat2Mat = new THREE.MeshPhongMaterial({ color: 0x123bff, emissive: 0x1827c8 });
     const sat2Mesh = new THREE.Mesh(sat2Geo, sat2Mat);
     cyberGroup.add(sat2Mesh);
 
@@ -137,8 +137,8 @@
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
-    const color1 = new THREE.Color(0x00f0ff);
-    const color2 = new THREE.Color(0xa855f7);
+    const color1 = new THREE.Color(0x123bff);
+    const color2 = new THREE.Color(0xc6ff00);
 
     for (let i = 0; i < particleCount; i++) {
       const radius = 6.5 + Math.random() * 6.5;
@@ -169,14 +169,14 @@
     cyberGroup.add(particlePoints);
 
     // --- Lights ---
-    const ambientLight = new THREE.AmbientLight(0x0a192f, 2.5);
+    const ambientLight = new THREE.AmbientLight(0x080b18, 2.5);
     scene.add(ambientLight);
 
-    const cyanPointLight = new THREE.PointLight(0x00f0ff, 3, 50);
+    const cyanPointLight = new THREE.PointLight(0x123bff, 3, 50);
     cyanPointLight.position.set(12, 10, 15);
     scene.add(cyanPointLight);
 
-    const purplePointLight = new THREE.PointLight(0xa855f7, 2.5, 50);
+    const purplePointLight = new THREE.PointLight(0xc6ff00, 2.5, 50);
     purplePointLight.position.set(-12, -10, -10);
     scene.add(purplePointLight);
 
@@ -212,15 +212,6 @@
       pulseScale = 1.25;
       if (window.AudioFX) {
         window.AudioFX.playPulse();
-      }
-      const scanStatus = document.getElementById('cyber-status-text');
-      if (scanStatus) {
-        scanStatus.textContent = 'SECURITY CORE: SCANNING...';
-        scanStatus.style.color = '#00f0ff';
-        setTimeout(() => {
-          scanStatus.textContent = 'THREAT DEFENSE: ACTIVE [NOMINAL]';
-          scanStatus.style.color = '#34d399';
-        }, 1200);
       }
     }
 
@@ -317,22 +308,22 @@
       ctx.rotate(angle);
       ctx.beginPath();
       ctx.ellipse(0, 0, 140, 70, Math.PI / 4, 0, Math.PI * 2);
-      ctx.strokeStyle = '#00f0ff';
+      ctx.strokeStyle = '#123BFF';
       ctx.lineWidth = 2;
       ctx.stroke();
 
       // Inner Ring
       ctx.beginPath();
       ctx.ellipse(0, 0, 160, 80, -Math.PI / 4, 0, Math.PI * 2);
-      ctx.strokeStyle = '#a855f7';
+      ctx.strokeStyle = '#C6FF00';
       ctx.lineWidth = 1.5;
       ctx.stroke();
       ctx.restore();
 
       // Glowing Center Core
       const grad = ctx.createRadialGradient(cx, cy, 10, cx, cy, 90);
-      grad.addColorStop(0, 'rgba(0, 240, 255, 0.8)');
-      grad.addColorStop(0.5, 'rgba(168, 85, 247, 0.4)');
+      grad.addColorStop(0, 'rgba(18, 59, 255, 0.8)');
+      grad.addColorStop(0.5, 'rgba(198, 255, 0, 0.4)');
       grad.addColorStop(1, 'transparent');
       ctx.fillStyle = grad;
       ctx.beginPath();
@@ -351,7 +342,7 @@
         else ctx.lineTo(x, y);
       }
       ctx.closePath();
-      ctx.strokeStyle = '#38bdf8';
+      ctx.strokeStyle = '#123BFF';
       ctx.lineWidth = 2.5;
       ctx.stroke();
       ctx.restore();
