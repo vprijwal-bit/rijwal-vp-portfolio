@@ -1,0 +1,31 @@
+{
+  "name": "rijwal-vp-cyber-portfolio-3d",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium 3D Cybersecurity & Cloud DevOps Portfolio for Rijwal VP",
+  "author": "Rijwal VP <vprijwal@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "lucide": "^0.363.0",
+    "three": "^0.163.0"
+  },
+  "keywords": [
+    "cybersecurity",
+    "portfolio",
+    "threejs",
+    "3d-portfolio",
+    "devops",
+    "cloud",
+    "aws",
+    "ghostwatch"
+  ]
+}

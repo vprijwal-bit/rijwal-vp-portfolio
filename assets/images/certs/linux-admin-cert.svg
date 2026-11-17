@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberCertBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0a18" />
+      <stop offset="50%" stop-color="#0a0714" />
+      <stop offset="100%" stop-color="#04020a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="550" fill="url(#cyberCertBg)" />
+  <rect x="25" y="25" width="750" height="500" rx="4" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="2" />
+  <rect x="35" y="35" width="730" height="480" rx="2" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+  <path d="M 25 55 L 25 25 L 55 25" fill="none" stroke="#a855f7" stroke-width="4" />
+  <path d="M 775 55 L 775 25 L 745 25" fill="none" stroke="#a855f7" stroke-width="4" />
+  <path d="M 25 495 L 25 525 L 55 525" fill="none" stroke="#a855f7" stroke-width="4" />
+  <path d="M 775 495 L 775 525 L 745 525" fill="none" stroke="#a855f7" stroke-width="4" />
+
+  <text x="400" y="85" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="20" fill="#a855f7" letter-spacing="3">CYBERSECURITY LAB PRACTICALS</text>
+  <text x="400" y="110" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#94a3b8" letter-spacing="1.5">ETHICAL SECURITY &amp; VULNERABILITY ASSESSMENT</text>
+  <line x1="250" y1="125" x2="550" y2="125" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1" />
+
+  <text x="400" y="165" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="13" fill="#cbd5e1" letter-spacing="4">RECORD OF PRACTICAL RESEARCH</text>
+  <text x="400" y="195" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#64748b">AWARDED TO</text>
+  
+  <text x="400" y="245" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="32" fill="#ffffff" letter-spacing="2">RIJWAL VP</text>
+  <line x1="260" y1="260" x2="540" y2="260" stroke="#a855f7" stroke-width="2" />
+
+  <text x="400" y="295" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="14" fill="#e2e8f0">Demonstrating rigorous practical hands-on proficiency in authorized laboratories</text>
+  <text x="400" y="325" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="700" font-size="16" fill="#c084fc" letter-spacing="1">ETHICAL HACKING &amp; LAB RESEARCH</text>
+
+  <rect x="90" y="355" width="620" height="70" rx="8" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(168, 85, 247, 0.2)" />
+  <text x="400" y="380" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c084fc">AUTHORIZED SECURITY LAB AREAS</text>
+  <text x="400" y="405" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#94a3b8">Kali Linux • Nmap Scanning • Metasploitable2 • Burp Suite • OWASP Assessment • Firmware Binwalk</text>
+
+  <circle cx="400" cy="470" r="26" fill="rgba(168, 85, 247, 0.1)" stroke="#a855f7" stroke-width="1.5" />
+  <text x="400" y="474" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="8" fill="#c084fc" font-weight="bold">SEC LAB</text>
+</svg>

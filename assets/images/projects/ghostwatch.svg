@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#7000ff" />
+    </linearGradient>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 240, 255, 0.08)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <rect width="800" height="450" fill="url(#gridPattern)" />
+
+  <!-- Radar circle / HUD circle -->
+  <circle cx="400" cy="225" r="150" fill="none" stroke="rgba(0, 240, 255, 0.15)" stroke-width="1" stroke-dasharray="4,8" />
+  <circle cx="400" cy="225" r="100" fill="none" stroke="rgba(0, 240, 255, 0.25)" stroke-width="1.5" />
+  <circle cx="400" cy="225" r="50" fill="none" stroke="rgba(112, 0, 255, 0.3)" stroke-width="2" />
+  
+  <!-- Scanning sweep line -->
+  <line x1="400" y1="225" x2="520" y2="135" stroke="#00f0ff" stroke-width="2" filter="url(#cyanGlow)" />
+  
+  <!-- Ghost Shield Icon -->
+  <path d="M 400 160 L 450 185 L 450 240 C 450 270 400 295 400 295 C 400 295 350 270 350 240 L 350 185 Z" 
+        fill="rgba(0, 240, 255, 0.1)" stroke="#00f0ff" stroke-width="3" filter="url(#cyanGlow)" />
+  
+  <!-- Eye/Crosshair in shield -->
+  <circle cx="400" cy="220" r="14" fill="none" stroke="#7000ff" stroke-width="3" />
+  <circle cx="400" cy="220" r="5" fill="#00f0ff" />
+  <line x1="375" y1="220" x2="425" y2="220" stroke="rgba(0, 240, 255, 0.6)" stroke-width="1.5" />
+  <line x1="400" y1="195" x2="400" y2="245" stroke="rgba(0, 240, 255, 0.6)" stroke-width="1.5" />
+
+  <!-- HUD Corner Brackets -->
+  <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#00f0ff" stroke-width="2" />
+  <path d="M 770 50 L 770 30 L 750 30" fill="none" stroke="#00f0ff" stroke-width="2" />
+  <path d="M 30 400 L 30 420 L 50 420" fill="none" stroke="#00f0ff" stroke-width="2" />
+  <path d="M 770 400 L 770 420 L 750 420" fill="none" stroke="#00f0ff" stroke-width="2" />
+
+  <!-- Code/Telemetry Stream -->
+  <text x="50" y="70" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f0ff" opacity="0.8">// MODULE: GHOSTWATCH_DAEMON</text>
+  <text x="50" y="90" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(255,255,255,0.6)">STATUS: ACTIVE_FILE_MONITORING [fatrace/psutil]</text>
+  <text x="50" y="110" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981">PID [3482] /etc/shadow READ DETECTED -> SUSPICIOUS EXFILTRATION</text>
+  
+  <!-- Right HUD Data -->
+  <text x="750" y="70" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="12" fill="#a855f7" opacity="0.9">HEURISTIC ENGINE v2.4</text>
+  <text x="750" y="90" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(255,255,255,0.5)">KERNEL INODE TRACKING: ON</text>
+  <text x="750" y="110" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f0ff">SEC_LEVEL: HIGH_ALERT</text>
+
+  <!-- Title Bottom -->
+  <text x="400" y="360" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="4">GHOSTWATCH</text>
+  <text x="400" y="388" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="13" fill="#00f0ff" letter-spacing="2">LINUX BEHAVIORAL SECURITY &amp; FILE INTEGRITY MONITOR</text>
+  
+  <!-- Tech badges -->
+  <rect x="230" y="405" width="65" height="20" rx="4" fill="rgba(0, 240, 255, 0.15)" stroke="rgba(0,240,255,0.4)" />
+  <text x="262" y="419" text-anchor="middle" font-family="monospace" font-size="10" fill="#00f0ff">Python</text>
+
+  <rect x="305" y="405" width="60" height="20" rx="4" fill="rgba(0, 240, 255, 0.15)" stroke="rgba(0,240,255,0.4)" />
+  <text x="335" y="419" text-anchor="middle" font-family="monospace" font-size="10" fill="#00f0ff">Linux</text>
+
+  <rect x="375" y="405" width="65" height="20" rx="4" fill="rgba(168, 85, 247, 0.15)" stroke="rgba(168,85,247,0.4)" />
+  <text x="407" y="419" text-anchor="middle" font-family="monospace" font-size="10" fill="#c084fc">fatrace</text>
+
+  <rect x="450" y="405" width="55" height="20" rx="4" fill="rgba(168, 85, 247, 0.15)" stroke="rgba(168,85,247,0.4)" />
+  <text x="477" y="419" text-anchor="middle" font-family="monospace" font-size="10" fill="#c084fc">psutil</text>
+
+  <rect x="515" y="405" width="55" height="20" rx="4" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16,185,129,0.4)" />
+  <text x="542" y="419" text-anchor="middle" font-family="monospace" font-size="10" fill="#34d399">Rich</text>
+</svg>
