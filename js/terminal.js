@@ -47,14 +47,12 @@
                hands-on problem-solving mindset.`,
 
     skills: `TECHNICAL SKILLS INVENTORY:
-  • <span class="cyan-hl">Cloud Infrastructure</span> : AWS (EC2, S3, IAM, RDS, CloudWatch), Microsoft Azure
-  • <span class="purple-hl">Cybersecurity</span>        : Nmap, Burp Suite, OWASP Top 10, Metasploitable2,
-                                   Vulnerability Assessment, FTP/SMB/NFS Auditing, MQTT Security
-  • <span class="cyan-hl">Networking</span>           : TCP/IP, Subnetting, VLAN (802.1Q), Routing, LAN/WAN, GNS3
-  • <span class="purple-hl">Operating Systems</span>    : Kali Linux, Ubuntu/Linux, Windows
-  • <span class="cyan-hl">Programming</span>          : Python, Java, JavaScript
-  • <span class="purple-hl">Development</span>          : Node.js, Express.js, PHP fundamentals, MySQL, REST APIs
-  • <span class="cyan-hl">DevOps & Tools</span>       : Git, GitHub Actions, CI/CD Pipelines, Docker, VirtualBox, PM2`,
+  • <span class="cyan-hl">Cloud Infrastructure</span>    : AWS, EC2 Instances, S3 Storage, IAM Policies, RDS MySQL, CloudWatch
+  • <span class="purple-hl">Cybersecurity</span>           : Nmap Recon, Metasploitable2, MQTT Broker Security, Binwalk Firmware
+  • <span class="cyan-hl">Networking</span>              : TCP/IP Protocol, Subnetting (CIDR), VLAN (802.1Q),
+                                      Static & Dynamic Routing, LAN / WAN Architecture, GNS3 Simulation
+  • <span class="purple-hl">Operating Systems</span>       : Kali Linux, Ubuntu Linux, Linux Administration, Windows Server
+  • <span class="cyan-hl">Systems Programming & Web</span>: Python, Java, MySQL, JavaScript`,
 
     projects: `FEATURED PRODUCTION & LAB PROJECTS:
   1. <span class="cyan-hl">GhostWatch</span> (Python, Linux, fatrace, psutil, watchdog, Rich)
@@ -75,12 +73,10 @@
 
     labs: `AUTHORIZED CYBERSECURITY LAB EXPERIENCE:
   [NOTE: All activities performed in controlled, authorized educational laboratories]
-  • <span class="cyan-hl">Kali Linux & Nmap</span>       : SYN stealth scans, OS detection, aggressive scans (-A), custom NSE scripts
-  • <span class="purple-hl">Metasploitable2</span>          : Service vulnerability analysis, banner grabbing, port enumeration
-  • <span class="cyan-hl">Burp Suite & OWASP</span>       : Proxy interception, SQL injection detection, XSS verification, auth bypass analysis
-  • <span class="purple-hl">FTP / SMB / NFS</span>          : Anonymous FTP check, SMB share enumeration (null sessions), NFS showmount auditing
-  • <span class="cyan-hl">MQTT IoT Security</span>        : Mosquitto broker authentication, topic-level ACL configuration, encrypted transit
-  • <span class="purple-hl">Firmware Analysis</span>        : Binwalk filesystem extraction, squashfs unpacking, entropy curve graphing`,
+  • <span class="cyan-hl">Kali Linux Environment</span>   : Hardened Debian-based security environment & CLI tool execution
+  • <span class="purple-hl">Nmap Reconnaissance</span>      : SYN stealth scans, OS detection, service auditing & NSE scripts
+  • <span class="cyan-hl">Metasploitable2 Analysis</span> : Service vulnerability analysis, banner grabbing & misconfig auditing
+  • <span class="purple-hl">MQTT IoT Broker Security</span> : Mosquitto broker authentication, topic-level ACLs & encrypted transit`,
 
     cloud: `AWS CLOUD INFRASTRUCTURE & ARCHITECTURE:
   • <span class="cyan-hl">Amazon EC2</span>        : Linux instance provisioning, security group ingress hardening, PM2, Nginx HTTPS
@@ -100,16 +96,20 @@
 
     internship: `INTERNSHIP EXPERIENCE:
   • <span class="cyan-hl">IPSR Solutions Ltd.</span>
-    Role  : AI-Integrated Cloud, DevOps & Cybersecurity Intern
-    Scope : Linux administration, AWS Cloud infrastructure, Microsoft Azure,
-            GNS3 network simulation, DevOps fundamentals, OWASP Top 10,
-            Burp Suite vulnerability assessment.`,
+    Role     : AI-Integrated Cloud, DevOps & Cybersecurity Intern (8 Weeks / 240 Hrs)
+    Date     : Completed June 5, 2026 | ID: TnBGEHrZwQ
+    Scope    : Advanced Network Management, Linux Administration, AWS & Azure Cloud,
+               CI/CD Pipelines, Ansible Automation, Security Hardening & Vulnerability Assessment.`,
 
-    certs: `VERIFIABLE PRACTICAL CERTIFICATES:
-  1. AI-Integrated Cloud, DevOps & Cybersecurity - IPSR Solutions Ltd.
-  2. AWS Cloud Architecture & Practical Infrastructure Foundations
-  3. Linux System Administration & Security Hardening Labs
-  4. GNS3 Enterprise Network Simulation & Routing Practicals`,
+    certs: `VERIFIABLE CREDENTIALS & CERTIFICATES:
+  1. <span class="cyan-hl">8-Week Internship in AI-Integrated Cloud, DevOps & Cybersecurity</span>
+     IPSR Solutions Ltd | Completed June 5, 2026 | ID: TnBGEHrZwQ
+  2. <span class="cyan-hl">Industry-led Certificate Course (30 Hours)</span>
+     IPSR Solutions Ltd | Completed May 6, 2026 | ID: yu4qvDugpv
+  3. <span class="cyan-hl">Webinar on Getting Started with OpenShift AI for Future Careers</span>
+     Red Hat & IPSR Solutions Ltd | April 23, 2026 | ID: NRjjC2IJ8D
+  4. <span class="cyan-hl">Project Udaan Educational Technical Visit (Trivandrum Port)</span>
+     Adani Foundation | February 4, 2026 | ID: UDAAN-2026-333683-69768900`,
 
     contact: `COMMUNICATION CHANNELS:
   • Email    : <a href="mailto:vprijwal@gmail.com" class="term-link">vprijwal@gmail.com</a>

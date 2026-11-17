@@ -132,25 +132,43 @@
   const certModalTitle = document.getElementById('cert-modal-title');
   const certModalOrg = document.getElementById('cert-modal-org');
   const certModalDesc = document.getElementById('cert-modal-desc');
+  const certModalId = document.getElementById('cert-modal-id');
+  const certModalLink = document.getElementById('cert-modal-link');
   const certModalClose = document.getElementById('cert-modal-close');
-  const certCards = document.querySelectorAll('.cert-card');
 
-  certCards.forEach((card) => {
-    card.addEventListener('click', () => {
-      const imgSrc = card.getAttribute('data-cert-img');
-      const title = card.getAttribute('data-cert-title');
-      const org = card.getAttribute('data-cert-org');
-      const desc = card.getAttribute('data-cert-desc');
+  function openCertificateModal(element) {
+    const card = element.closest('[data-cert-img]') || element;
+    const imgSrc = card.getAttribute('data-cert-img');
+    const title = card.getAttribute('data-cert-title');
+    const org = card.getAttribute('data-cert-org');
+    const desc = card.getAttribute('data-cert-desc');
+    const certId = card.getAttribute('data-cert-id') || '';
 
-      if (certModalImg) certModalImg.src = imgSrc;
-      if (certModalTitle) certModalTitle.textContent = title;
-      if (certModalOrg) certModalOrg.textContent = org;
-      if (certModalDesc) certModalDesc.textContent = desc;
-
-      if (certModal) {
-        certModal.classList.add('open');
-        if (window.AudioFX) window.AudioFX.playAccessGranted();
+    if (certModalImg) certModalImg.src = imgSrc;
+    if (certModalTitle) certModalTitle.textContent = title;
+    if (certModalOrg) certModalOrg.textContent = org;
+    if (certModalDesc) certModalDesc.textContent = desc;
+    if (certModalId) {
+      if (certId) {
+        certModalId.textContent = `ID: ${certId}`;
+        certModalId.style.display = 'inline-block';
+      } else {
+        certModalId.style.display = 'none';
       }
+    }
+    if (certModalLink) {
+      certModalLink.href = imgSrc;
+    }
+
+    if (certModal) {
+      certModal.classList.add('open');
+      if (window.AudioFX) window.AudioFX.playAccessGranted();
+    }
+  }
+
+  document.querySelectorAll('[data-cert-img]').forEach((card) => {
+    card.addEventListener('click', (e) => {
+      openCertificateModal(card);
     });
   });
 
