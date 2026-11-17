@@ -4,7 +4,6 @@
 
 A premium, interactive, responsive 3D personal portfolio website engineered for **Rijwal VP** — Cybersecurity Enthusiast, Cloud & DevOps Learner, and BCA student at Marian College Kuttikkanam (Autonomous), Kerala, India.
 
-Inspired by advanced spatial WebGL interaction and high-performance frontend engineering (such as [Yashchauhan008/portfolio-3d](https://github.com/Yashchauhan008/portfolio-3d)), this portfolio delivers an extraordinary cyberpunk aesthetic tailored specifically to technical recruiters, DevSecOps leads, and cloud architects.
 
 ---
 
