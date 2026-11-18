@@ -1,163 +1,267 @@
-# Rijwal VP — Professional 3D Cybersecurity & Cloud Portfolio
+# RIJWAL VP — 3D CYBER PORTFOLIO
 
-> "Exploring Technology. Building Security. Engineering the Future."
+<div align="center">
 
-A premium, interactive, responsive 3D personal portfolio website engineered for **Rijwal VP** — Cybersecurity Enthusiast, Cloud & DevOps Learner, and BCA student at Marian College Kuttikkanam (Autonomous), Kerala, India.
+```text
+██████╗ ██╗     ██╗    ██╗ █████╗ ██╗
+██╔══██╗██║     ██║    ██║██╔══██╗██║
+██████╔╝██║     ██║ █╗ ██║███████║██║
+██╔══██╗██║     ██║███╗██║██╔══██║██║
+██║  ██║███████╗╚███╔███╔╝██║  ██║██║
+╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝
+```
 
+### 🚀 Professional 3D Cybersecurity & Cloud Portfolio
+
+**Exploring Technology • Building Security • Engineering the Future**
+
+[![Portfolio](https://img.shields.io/badge/LIVE-PORTFOLIO-00C7FF?style=for-the-badge&logo=vercel&logoColor=white)](https://rijwal-vp-portfolio.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github)](https://github.com/vprijwal-bit)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rijwalvp)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat-square&logo=vercel)
+
+![Status](https://img.shields.io/badge/STATUS-LIVE-00C853?style=for-the-badge)
+![Category](https://img.shields.io/badge/CATEGORY-PERSONAL_PORTFOLIO-0078D4?style=for-the-badge)
+
+</div>
 
 ---
 
-## 🚀 Key Features & Highlights
+## 👨‍💻 About Me
 
-1. **Full-Screen 3D Cyber Core (Three.js WebGL)**
-   - Interactive 3D cryptographic security sphere with dual orbiting planetary telemetry rings.
-   - Satellite data nodes with real-time procedural orbital mechanics.
-   - Mouse-responsive parallax and dynamic drag rotation with smooth inertia damping.
-   - Interactive **Security Scan Pulse** (`[!] SCAN PULSE`) that triggers energy waves across the 3D geometry.
-   - Graceful zero-dependency fallback canvas for low-power or restricted browser environments.
+Hello! I'm **Rijwal VP**, a Bachelor of Computer Applications (BCA) student at Marian College Kuttikkanam (Autonomous), Kerala, India.
 
-2. **Interactive Background Constellation (HTML5 Canvas)**
-   - Dynamic floating network nodes with proximity line connections.
-   - Floating binary bits and cybersecurity protocol tokens (`01`, `SYN`, `ACK`, `SEC`, `TCP`, `AWS`, `SSH`).
-   - Mouse repulsion physics: cursor smoothly disperses surrounding nodes.
+I'm passionate about technology, software development, computer networking, cybersecurity, cloud computing and DevOps.
 
-3. **Synthesized Web Audio Cyber Sound FX (`audio-fx.js`)**
-   - Pure Web Audio API procedural synthesizer: zero external `.mp3` or `.wav` files required!
-   - Synthesizes laser scans, UI clicks, access-granted chimes, and alert beeps.
-   - Muted by default to respect accessibility standards, with one-click sound toggle in navbar.
+I enjoy learning new technologies, building practical projects and exploring how technology can solve real-world problems.
 
-4. **Interactive Cyber CLI Terminal (`terminal.js`)**
-   - Floating `[ >_ CLI CONSOLE ]` launcher and navbar button (plus hotkey **`~`** backtick toggle).
-   - Real terminal emulator (`rijwal@cyber-node:~$`) supporting commands:
-     - `whoami`: Candidate identity and summary
-     - `skills`: Categorized skill matrix
-     - `projects`: Featured repositories with direct links
-     - `labs`: Detailed breakdown of authorized lab testing
-     - `cloud`: AWS cloud architecture capabilities
-     - `education`: Academic degrees & institutions
-     - `internship`: IPSR Solutions Ltd experience
-     - `cv`: Directly triggers download of `RijwalVP-CV.pdf`
-     - `scan`: Interactive simulated vulnerability audit
-     - `clear` & `exit`: Screen management
-   - Supports command history (Up/Down arrows) and autocomplete (Tab).
+**My goal:** To continuously improve my technical skills and become a professional in the technology and cybersecurity industry.
 
-5. **Curated Showcase of Rijwal VP's Real Background**
-   - **Identity**: BCA at Marian College Kuttikkanam, HSS at GBoys HSS Manjeri (Computer Science).
-   - **IPSR Solutions Ltd Internship**: Linux administration, AWS, Azure, GNS3, DevOps, and OWASP.
-   - **Featured Projects**:
-     - **GhostWatch**: Python-based Linux behavioral security monitor detecting unauthorized file access and data exfiltration.
-     - **Cloud-Based Student Portal**: AWS EC2 + RDS MySQL + Next.js full-stack system with GitHub Actions CI/CD.
-     - **NetworkSimLab**: GNS3 enterprise network simulation with 802.1Q VLAN trunking and routing protocols.
-     - **Flask Docker Todo App**: Multi-stage containerized Python web application.
-   - **Dedicated AWS Cloud Experience**: EC2, S3 encryption, IAM least-privilege, RDS MySQL, CloudWatch, and CloudTrail.
-   - **Authorized Cybersecurity Labs**: Kali Linux, Nmap, Metasploitable2, Burp Suite, FTP/SMB/NFS auditing, MQTT broker security, and Binwalk firmware analysis.
-   - **Certificate Gallery**: Interactive modal inspector with verifiable learning milestones.
+---
+
+## ⚡ Portfolio Features
+
+| Feature | Description |
+|---|---|
+| 🌐 3D Cyber Core | Interactive Three.js 3D security visualization |
+| ✨ Particle Background | Animated network constellation |
+| 💻 Cyber CLI | Interactive portfolio terminal |
+| 🔊 Sound Effects | Web Audio API synthesized effects |
+| 🛡️ Security Theme | Futuristic cybersecurity-inspired interface |
+| 📱 Responsive Design | Desktop, tablet and mobile support |
+| 📜 Certificate Gallery | Interactive certificate previews |
+| 📄 Resume Download | Downloadable PDF resume |
+
+---
+
+## 🧠 Technical Skills
+
+**Cloud & DevOps**
+- AWS, EC2, S3, IAM, RDS
+- Linux Administration
+- Docker and GitHub Actions
+- CloudWatch and CloudTrail
+
+**Cybersecurity & Networking**
+- Kali Linux
+- Nmap and Burp Suite
+- Metasploitable2
+- GNS3
+- VLANs and Routing
+- MQTT Security and Firmware Analysis
+
+**Programming & Development**
+- Python
+- Java
+- JavaScript
+- HTML and CSS
+- MySQL
+- Flask and Node.js
+
+---
+
+## 🚀 Featured Projects
+
+### 👻 GhostWatch
+**Real-Time Behavioral Security Monitor for Linux**
+
+A Python-based Linux security monitoring project that observes file activity, identifies suspicious access patterns and analyzes processes responsible for potentially unauthorized behavior.
+
+### ☁️ Cloud-Based Student Portal
+**AWS Cloud & Full-Stack Development**
+
+A student portal management system using AWS cloud services, MySQL and full-stack development technologies.
+
+### 🌐 NetworkSimLab
+**Enterprise Network Simulation**
+
+A networking project involving GNS3, VLAN trunking, routing protocols and network configuration.
+
+### 🐳 Flask Docker Todo App
+**Containerized Python Application**
+
+A Flask-based application packaged using Docker with a multi-stage container build.
+
+---
+
+## 🎓 Education & Internship
+
+**Education**
+
+- Bachelor of Computer Applications (BCA)
+- Marian College Kuttikkanam (Autonomous), Kerala, India
+
+**Internship**
+
+- IPSR Solutions Ltd.
+- AI-Integrated Cloud, DevOps & Cybersecurity Internship
+- Linux Administration, AWS, Azure, GNS3, DevOps and OWASP fundamentals
+
+---
+
+## 🏅 Certifications & Achievements
+
+My portfolio includes certificates and learning achievements related to:
+
+- AI-Integrated Cloud, DevOps & Cybersecurity
+- IPSR Internship
+- Red Hat OpenShift AI
+- Project Udaan
+- Networking and Linux learning activities
+
+View the certificate gallery on my portfolio website.
+
+---
+
+## 🛠️ Technology Stack
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+</div>
+
+---
+
+## 🌐 Explore My Portfolio
+
+<div align="center">
+
+### ENTER THE DIGITAL WORLD
+
+**Explore my projects, skills, certifications and cybersecurity journey.**
+
+[![VISIT MY PORTFOLIO](https://img.shields.io/badge/🚀_VISIT_MY_LIVE_PORTFOLIO-00C7FF?style=for-the-badge&logo=vercel&logoColor=white)](https://rijwal-vp-portfolio.vercel.app/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-vprijwal--bit-181717?style=for-the-badge&logo=github)](https://github.com/vprijwal-bit)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rijwal_VP-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rijwalvp)
+
+[![Email](https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rijwal.vp@gmail.com)
+
+</div>
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 rijwal-vp-cyber-portfolio-3d/
-├── index.html                   # Master HTML5 layout with cyberpunk theme & SEO tags
+│
+├── index.html
 ├── css/
-│   ├── style.css                # Master styling, glassmorphism, HUD brackets, colors
-│   └── responsive.css           # Mobile, tablet, and reduced-motion optimizations
+│   ├── style.css
+│   └── responsive.css
+│
 ├── js/
-│   ├── main.js                  # Navigation, scrollspy, filter tabs, modal controls
-│   ├── cyber-3d.js              # Three.js 3D Cyber Core & WebGL interaction
-│   ├── particle-matrix.js       # Background interactive digital constellation
-│   ├── terminal.js              # Interactive Cybersecurity CLI Console
-│   └── audio-fx.js              # Web Audio API futuristic sound synthesizer
+│   ├── main.js
+│   ├── cyber-3d.js
+│   ├── particle-matrix.js
+│   ├── terminal.js
+│   └── audio-fx.js
+│
 ├── assets/
 │   ├── documents/
-│   │   └── RijwalVP-CV.pdf      # Official CV PDF
 │   └── images/
-│       ├── rijwal-portrait.jpg  # Rijwal VP profile photograph
-│       ├── rijwal-profile.png   # Transparent profile cutout
-│       ├── projects/            # High-tech SVG architecture graphics
-│       │   ├── ghostwatch.svg
-│       │   ├── student-portal.svg
-│       │   ├── network-sim-lab.svg
-│       │   └── todo-app.svg
-│       └── certs/               # High-res certificate preview graphics
-│           ├── ipsr-internship-cert.svg
-│           ├── aws-cloud-cert.svg
-│           ├── linux-admin-cert.svg
-│           └── networking-lab-cert.svg
-├── .github/
-│   └── workflows/
-│       └── deploy.yml           # Automated GitHub Pages CI/CD workflow
-├── package.json                 # Optional Vite / Node configuration
-├── vite.config.js               # Vite bundler configuration
-├── vercel.json                  # Vercel deployment & security headers config
-├── netlify.toml                 # Netlify deployment configuration
-└── README.md                    # Documentation & deployment guide
+│       ├── certs/
+│       └── projects/
+│
+├── public/
+│   ├── assets/
+│   └── js/
+│
+├── package.json
+├── vite.config.js
+├── vercel.json
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-## 💻 Local Quick Start
-
-### Method 1: Instant Python HTTP Server (Zero Install)
-Since Python 3 is installed on your system, you can run the portfolio immediately without installing any dependencies:
+## 💻 Run Locally
 
 ```bash
-cd "C:\Users\VICTUS\.gemini\antigravity\scratch\rijwal-vp-cyber-portfolio-3d"
-python -m http.server 8000
-```
-Open **[http://localhost:8000](http://localhost:8000)** in your browser.
+git clone https://github.com/vprijwal-bit/rijwal-vp-portfolio.git
 
-### Method 2: Modern Vite Bundler (Optional)
-If you install Node.js / Vite in the future:
-```bash
+cd rijwal-vp-portfolio
+
 npm install
+
 npm run dev
 ```
 
----
+Build the production version:
 
-## 🌐 Production Deployment Guide
-
-### Option A: Deploy to GitHub Pages (Automated via GitHub Actions)
-1. Initialize Git in the project directory:
-   ```bash
-   cd "C:\Users\VICTUS\.gemini\antigravity\scratch\rijwal-vp-cyber-portfolio-3d"
-   git init
-   git add .
-   git commit -m "Initial commit: Rijwal VP 3D Cybersecurity Portfolio"
-   ```
-2. Create a new repository on your GitHub account (`vprijwal-bit/portfolio-3d` or `vprijwal-bit.github.io`).
-3. Add remote and push:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/vprijwal-bit/portfolio-3d.git
-   git push -u origin main
-   ```
-4. In your GitHub repository:
-   - Navigate to **Settings** → **Pages**.
-   - Under **Build and deployment** → **Source**, select **GitHub Actions**.
-   - The included `.github/workflows/deploy.yml` workflow will automatically build and publish your site!
-
-### Option B: Deploy to Vercel (1-Click)
-1. Push your code to GitHub.
-2. Go to **[vercel.com](https://vercel.com)** and sign in with GitHub.
-3. Click **Add New...** → **Project** and import your repository.
-4. Keep the default settings (Framework: *Other*, Root Directory: `./`).
-5. Click **Deploy**. The included `vercel.json` will automatically configure security headers and static asset caching.
-
-### Option C: Deploy to Netlify
-1. Go to **[netlify.com](https://netlify.com)** and sign in.
-2. Drag and drop the `rijwal-vp-cyber-portfolio-3d` folder directly into Netlify Drop, or connect your GitHub repository.
-3. The included `netlify.toml` will automatically set up production security headers and publish the root directory.
+```bash
+npm run build
+```
 
 ---
 
-## 🔒 Verification & Contact Information
+## 🚀 Deployment
 
-- **Name**: Rijwal VP
-- **Location**: Malappuram, Kerala, India
-- **GitHub**: [github.com/vprijwal-bit](https://github.com/vprijwal-bit)
-- **LinkedIn**: [linkedin.com/in/rijwalvp](https://www.linkedin.com/in/rijwalvp)
-- **Email**: [vprijwal@gmail.com](mailto:vprijwal@gmail.com)
-- **Resume**: Available in `assets/documents/RijwalVP-CV.pdf` and downloadable via the hero section & terminal (`cv` command).
+This project is hosted on **Vercel**, connected to GitHub for automatic deployments.
+
+**Live URL:** https://rijwal-vp-portfolio.vercel.app/
+
+Every successful push to the connected `main` branch can trigger a new deployment.
+
+---
+
+## 📬 Contact
+
+| | |
+|---|---|
+| Name | Rijwal VP |
+| Location | Malappuram, Kerala, India |
+| Education | BCA |
+| Email | rijwal.vp@gmail.com |
+| GitHub | [vprijwal-bit](https://github.com/vprijwal-bit) |
+| LinkedIn | [Rijwal VP](https://www.linkedin.com/in/rijwalvp) |
+| Portfolio | [Live Website](https://rijwal-vp-portfolio.vercel.app/) |
+
+---
+
+<div align="center">
+
+**"Exploring Technology. Building Security. Engineering the Future."**
+
+⭐ If you find my work interesting, consider visiting my portfolio and GitHub projects.
+
+© 2026 Rijwal VP. All Rights Reserved.
+
+</div>
