@@ -1519,6 +1519,17 @@ textarea.form-control {
   color: #f87171;
 }
 
+.form-status.loading {
+  background: rgba(18, 59, 255, 0.12);
+  border: 1px solid rgba(18, 59, 255, 0.4);
+  color: var(--neon-cyan);
+}
+
+.contact-form-card .btn-cyber:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
 /* ==================== FOOTER ==================== */
 .footer {
   border-top: var(--border-subtle);

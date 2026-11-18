@@ -196,32 +196,63 @@
   const copyEmailBtn = document.getElementById('copy-email-btn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('contact-name').value.trim();
-      const email = document.getElementById('contact-email').value.trim();
-      const subject = document.getElementById('contact-subject').value.trim();
-      const message = document.getElementById('contact-message').value.trim();
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const submitButtonLabel = submitButton ? submitButton.querySelector('span') : null;
+    const originalButtonLabel = submitButtonLabel ? submitButtonLabel.textContent : '';
 
-      if (!name || !email || !message) {
-        showStatus('Please complete all mandatory parameters.', 'error');
-        if (window.AudioFX) window.AudioFX.playBeep(220, 0.12, 'sawtooth');
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (contactForm.dataset.submitting === 'true') {
         return;
       }
 
-      // Generate mailto link as reliable direct transmission
-      const mailtoUri = `mailto:vprijwal@gmail.com?subject=${encodeURIComponent(
-        `[Portfolio Contact] ${subject || 'Inquiry from ' + name}`
-      )}&body=${encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-      )}`;
+      const formData = new FormData(contactForm);
+      const fieldNames = ['name', 'email', 'subject', 'message'];
+      fieldNames.forEach((fieldName) => {
+        const value = formData.get(fieldName);
+        if (typeof value === 'string') {
+          formData.set(fieldName, value.trim());
+        }
+      });
 
-      showStatus('[✓] Packet prepared! Launching your mail client...', 'success');
-      if (window.AudioFX) window.AudioFX.playAccessGranted();
+      if (!formData.get('name') || !formData.get('email') || !formData.get('message')) {
+        showStatus('Unable to send your message. Please try again later.', 'error');
+        return;
+      }
 
-      setTimeout(() => {
-        window.location.href = mailtoUri;
-      }, 700);
+      contactForm.dataset.submitting = 'true';
+      contactForm.setAttribute('aria-busy', 'true');
+      if (submitButton) submitButton.disabled = true;
+      if (submitButtonLabel) submitButtonLabel.textContent = 'SENDING MESSAGE...';
+      showStatus('SENDING MESSAGE...', 'loading');
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) {
+          throw new Error(`Formspree request failed with status ${response.status}`);
+        }
+
+        contactForm.reset();
+        showStatus(
+          "Message sent successfully! Thank you for contacting me. I'll get back to you soon.",
+          'success'
+        );
+        if (window.AudioFX) window.AudioFX.playAccessGranted();
+      } catch (error) {
+        console.error('Contact form submission failed:', error);
+        showStatus('Unable to send your message. Please try again later.', 'error');
+      } finally {
+        delete contactForm.dataset.submitting;
+        contactForm.removeAttribute('aria-busy');
+        if (submitButton) submitButton.disabled = false;
+        if (submitButtonLabel) submitButtonLabel.textContent = originalButtonLabel;
+      }
     });
   }
 
@@ -230,9 +261,6 @@
     formStatus.textContent = msg;
     formStatus.className = 'form-status ' + type;
     formStatus.style.display = 'block';
-    setTimeout(() => {
-      formStatus.style.display = 'none';
-    }, 5000);
   }
 
   if (copyEmailBtn) {
