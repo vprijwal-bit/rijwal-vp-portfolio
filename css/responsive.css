@@ -37,6 +37,10 @@
     height: 440px;
   }
 
+  .hero-portrait {
+    width: clamp(220px, 30vw, 300px);
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -251,6 +255,10 @@
 
   .hero-visual-stage {
     height: 340px;
+  }
+
+  .hero-portrait {
+    width: clamp(180px, 58vw, 240px);
   }
 
   .hero-cta-group {
